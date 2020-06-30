@@ -13,7 +13,7 @@ public class TestProject extends SetupServer {
 
     @BeforeClass
     public void setup() {
-        SetUp("safari", "http://ktvn-test.s3-website.us-east-1.amazonaws.com/");
+        SetUp("chrome", "http://ktvn-test.s3-website.us-east-1.amazonaws.com/");
         signin = new LoginPage(this);
         home = new HomePage(this);
     }

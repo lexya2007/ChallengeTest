@@ -28,19 +28,19 @@ public class HomePage {
         chooseRequestStatus();
         selectInactiveOption();
         clickApplyFiltersButton();
-        verifyFitersByRequestStatusWithInactive();
+        verifyFiltersByRequestStatusWithInactive();
     }
 
     public void Verify_sorting_of_First_Name_column() {
-        columnFirstName();
+        clickFirstNameColumn();
         // Descending
-        verifySortingofFirstName();
-        columnFirstName();
+        verifySortingOfFirstName();
+        clickFirstNameColumn();
         // Ascending
-        verifySortingofFirstName();
+        verifySortingOfFirstName();
     }
 
-    private void verifyFitersByRequestStatusWithInactive() {
+    private void verifyFiltersByRequestStatusWithInactive() {
         System.out.println("verify Fiters By Request Status With Inactive");
         List<WebElement> elements = driver.findElements(getListRequestStatus);
         for (WebElement element : elements) {
@@ -78,11 +78,13 @@ public class HomePage {
     // button Apply Filters
     private void clickApplyFiltersButton() {
         System.out.println("Click 'Apply Filters' button");
-        driver.Wait(3);
+        driver.Wait(1);
         driver.findElement(btnApplyFilter).click();
+        driver.findElement(btnApplyFilter).click();
+        driver.Wait(3);
     }
 
-    private void verifySortingofFirstName() {
+    private void verifySortingOfFirstName() {
         System.out.println("Verify sorting of First Name column");
         driver.Implicit_Wait(5);
         String getValue = driver.findElement(sort).getAttribute("class");
@@ -106,7 +108,7 @@ public class HomePage {
         }
     }
 
-    private void columnFirstName() {
+    private void clickFirstNameColumn() {
         System.out.println("Click 'First Name' column");
         driver.Explicit_Wait(5, lblFirstName).click();
     }
