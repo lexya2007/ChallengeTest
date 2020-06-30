@@ -1,0 +1,1 @@
+{"uuid":"1ce7bd0d-9448-4798-8c87-5054ed162dc1","name":"TestAPI","children":["96931fda-1386-429b-8942-8cce056b29c2"],"befores":[{"name":"setUpRestAssured","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1593417729785,"stop":1593417730073}],"afters":[],"links":[],"start":1593417729765,"stop":1593417732152}

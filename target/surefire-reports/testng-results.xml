@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="14631" started-at="2020-06-29T15:56:31 ICT" finished-at="2020-06-29T15:56:46 ICT">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="14631" started-at="2020-06-29T15:56:31 ICT" finished-at="2020-06-29T15:56:46 ICT">
+      <class name="Project.TestProject">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Project.TestProject@6a01e23]" name="setup" is-config="true" duration-ms="5667" started-at="2020-06-29T15:56:31 ICT" finished-at="2020-06-29T15:56:37 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="RunningAllTests()[pri:0, instance:Project.TestProject@6a01e23]" name="RunningAllTests" duration-ms="6411" started-at="2020-06-29T15:56:37 ICT" finished-at="2020-06-29T15:56:43 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunningAllTests -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Project.TestProject@6a01e23]" name="cleanUp" is-config="true" duration-ms="73" started-at="2020-06-29T15:56:43 ICT" finished-at="2020-06-29T15:56:43 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- Project.TestProject -->
+      <class name="API.TestAPI">
+        <test-method status="PASS" signature="setUpRestAssured()[pri:0, instance:API.TestAPI@5a955565]" name="setUpRestAssured" is-config="true" duration-ms="280" started-at="2020-06-29T15:56:43 ICT" finished-at="2020-06-29T15:56:44 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRestAssured -->
+        <test-method status="PASS" signature="Test_API()[pri:0, instance:API.TestAPI@5a955565]" name="Test_API" duration-ms="2100" started-at="2020-06-29T15:56:44 ICT" finished-at="2020-06-29T15:56:46 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_API -->
+      </class> <!-- API.TestAPI -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
