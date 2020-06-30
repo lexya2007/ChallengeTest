@@ -130,7 +130,7 @@ public class SetupServer {
         // To create folder to store screenshots
         new File(destDir).mkdirs();
         // Set file name with combination of test class name + date time.
-        fileName = fileName.replace(": ","_").replace("//","_").replace("/","_");
+        fileName = fileName.replace(": ", "_").replace("//", "_").replace("/", "_");
         String destFile = dateFormat.format(new Date()) + "_" + fileName + ".png";
 
         // Store file at destination folder location

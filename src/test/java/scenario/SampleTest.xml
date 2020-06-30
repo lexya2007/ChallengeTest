@@ -1,8 +1,8 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name = "Regression test Suite">
-    <test name = "Sample test1">
+<suite name = "Run all tests">
+    <test name = "Run">
         <classes>
             <class name = "API.TestAPI"/>
             <class name = "Project.TestProject"/>

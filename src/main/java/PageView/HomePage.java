@@ -4,7 +4,6 @@ import Support.SetupServer;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -25,10 +24,10 @@ public class HomePage {
     }
 
     public void Verify_filter_Student_Access_Request_with_INACTIVE() {
-        buttonFilters();
-        requestStatus();
-        optionInactive();
-        btnApplyFilters();
+        clickFiltersButton();
+        chooseRequestStatus();
+        selectInactiveOption();
+        clickApplyFiltersButton();
         verifyFitersByRequestStatusWithInactive();
     }
 
@@ -58,28 +57,29 @@ public class HomePage {
     }
 
     // click button Filters
-    private void buttonFilters() {
+    private void clickFiltersButton() {
         System.out.println("Click 'Filters' button");
         driver.findElement(btnFilter).click();
     }
 
     // Drop-down request Status
-    private void requestStatus() {
+    private void chooseRequestStatus() {
         System.out.println("Click 'Request Status'");
         driver.findElement(requestStatus).click();
     }
 
     // select option INACTIVE
-    private void optionInactive() {
+    private void selectInactiveOption() {
         System.out.println("select 'INACTIVE' option");
+        driver.Wait(2);
         driver.findElement(Inactive).click();
     }
 
     // button Apply Filters
-    private void btnApplyFilters() {
+    private void clickApplyFiltersButton() {
         System.out.println("Click 'Apply Filters' button");
-        driver.findElement(btnApplyFilter).click();
         driver.Wait(3);
+        driver.findElement(btnApplyFilter).click();
     }
 
     private void verifySortingofFirstName() {
